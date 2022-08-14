@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Id-Class</title>
+	<style>
+		#birinci{
+			color: orange;
+		}
+		.neos{
+			color: teal;
+		}
+		/*p{
+			color: red;
+		}*/
+		/*div>p=div p*/
+
+		/*div p{
+			color: green;
+			}*/
+		div #birinci{
+			color: pink;
+		}
+
+		div.paragraf{
+			color: blue;
+		}
+		.neos:hover{
+			color: red;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p id="birinci">bu bir paragraftır</p>
+		<p class="neos">bu bir paragraftır</p>
+		<p>bu bir paragraftır</p>
+		<p>bu bir paragraftır</p>
+		<p>bu bir paragraftır</p>
+	</div>
+
+	<p>bu bir paragraftır</p>
+	<p>bu bir paragraftır</p>
+	<p>bu bir paragraftır</p>
+
+	<div class="paragraf">
+		<p id="birinci">bu bir paragraftır</p>
+		<p class="neos">bu bir paragraftır</p>
+		<p>bu bir paragraftır</p>
+		
+		<p>bu bir paragraftır</p>
+
+		
+		<p>bu bir paragraftır</p>
+	</div>
+
+
+</body>
+</html>

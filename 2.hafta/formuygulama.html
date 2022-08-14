@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uygulama</title>
+</head>
+<body>
+	<form action="form2.html" method="GET">
+		<fieldset>
+			<legend>Kişisel bilgiler</legend>
+			<label>İsim-Soyisim</label><br>
+			<input type="text" name="isim" placeholder="isim soy isim giriniz"><br>
+			<label>Doğum Tarihi</label><br>
+			<input type="date" name="tarih"><br>
+			<label>Cinsiyet</label><br>
+			<input type="radio" name="cinsiyet" value="kadin">Erkek<br>
+			<input type="radio" name="cinsiyet" value="erkek">Kadın<br>
+		</fieldset>
+
+			<fieldset>
+				<legend>Kullanıcı Bilgileri</legend>
+				<label>Kullanıcı adı: </label><br>
+				<input type="text" name="K-adi" placeholder="kullanıcı adı giriniz"><br>
+				<label>Email adresi:</label><br>
+				<input type="email" name="mail" placeholder="mail adresi giriniz"><br>
+				<label>Parola:</label><br>
+				<input type="password" name="parola" placeholder="Parola Giriniz"><br>
+				<label>Parola Tekrar:</label><br>
+				<input type="password" name="parola2" placeholder="Parolayı Tekrar Giriniz"><br>		
+
+			</fieldset>
+			<br>
+			<input type="reset" name="sifirla" value="Temizle">
+			<input type="submit" name="gönder" value="Kayıt ol">
+	</form>
+
+</body>
+</html>
