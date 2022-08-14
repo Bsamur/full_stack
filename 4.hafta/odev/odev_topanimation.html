@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusme_animation</title>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: greenyellow;
+            
+        }
+        .daire{
+            border: 1px solid orangered;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background-color: orangered;
+            margin: 10px;
+            position: absolute;
+            animation: daire 5s infinite;
+        }
+        @keyframes daire{
+            0%{
+                left: 10px;
+                top: 10px;
+            }
+            20%{
+                left: 50px;
+                top: 120px;
+                border-radius: 15px 15px 13px 13px ;
+            }
+            40%{
+                left: 70px;
+                top: 30px;
+            }
+            60%{
+                left: 100px;
+                top: 120px;
+                border-radius: 15px 15px 14px 14px ;
+            }
+            80%{
+                left: 130px;
+                top: 70px;
+            }
+            100%{
+                left: 180px;
+                top: 120px;
+                
+            }
+        }
+        .zemin{
+            border-bottom: 1px solid black;
+            width: 500px;
+            height: 2px;
+            margin-top: 158px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="daire"></div>
+    <div class="zemin"></div>
+    
+</body>
+</html>

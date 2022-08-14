@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>fooeter yapımı</title>
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/ac2a67798e.js" crossorigin="anonymous"></script>
+	<style>
+		.cls_footer{
+			width: 100%;
+			height: 250px;
+			background-color: #343;
+			position: absolute;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+		body{
+			margin: 0;
+
+		}
+		.inner_footer{
+			width: 50%;
+			height: 190px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.footer_left{
+			text-align: center;
+			line-height: 30px;
+			letter-spacing: 2px;
+			border-right: 4px solid white;
+
+
+		}
+
+		.footer_left ul{
+			list-style: none;
+
+		}
+		.footer_left ul li a{
+			text-decoration: none;
+			color: white;
+			font-weight: bolder;
+
+		}
+
+		.footer_right ul{
+			list-style: none;
+			display: flex;
+
+		}
+		.footer_right ul li{
+			margin: 0 10px;
+
+		}
+		.fa-brands{
+			color: white;
+			font-size: 40px;
+
+		}
+		.fa-brands:hover{
+			color: orange;
+			text-shadow: 2px 2px white;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="cls_footer">
+		<div class="inner_footer footer_left">
+			<ul>
+				<li><a href="#">Ana sayfa</a></li>
+				<li><a href="#">Hakkında</a></li>
+				<li><a href="#">İletişim</a></li>
+				<li><a href="#">Giriş</a></li>
+				<li><a href="#">Kayıt ol</a></li>
+				
+			</ul>
+		</div>
+		<div class="inner_footer footer_right">
+			<ul>
+				<li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation3</title>
+    <style>
+        div{
+            width: 500px;
+            height: 70px;
+            background-image: linear-gradient(to right,rgb(85, 85, 164),rgb(219, 46, 46),rgb(58, 58, 123));
+            background-size: 200%;
+            margin: auto;
+            margin-top: 300px;
+            position: relative;
+           
+            border-radius: 30px;
+            text-align: center;
+        }
+        div:hover{
+            animation: bar 3s infinite alternate;
+        }
+        @keyframes bar{
+            from{
+                background-position: 0;
+                transform: rotate(0);
+                /*transform: scale(0)*/
+
+            }
+            to{
+                background-position: 100%;
+                transform: rotateY(180deg);
+                /*transform: scale(1.2)*/
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div>azra</div>
+    
+</body>
+</html>

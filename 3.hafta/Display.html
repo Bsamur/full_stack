@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Display özellikleri</title>
+	<style>
+		span{
+			background-color: green;
+			display: block;
+			width: 200px;
+			height: 150px;
+			/*visibility: hidden;*/
+		}
+		div{
+			background-color: orange;
+			width: 200px;
+			height: 150px;
+			display: inline;
+		}
+		p{
+			background-color: hotpink;
+			width: 200px;
+			height: 150px;
+			display: none;
+		}
+		b{
+			background-color: orange;
+			display: inline-block;
+			padding: 10px;
+		}
+		.neos1{
+			background-color: green;
+			width: 100px;
+			height: 50px;
+		}
+		.neos1 p{
+			width: 80px;
+			display: inline-flex;
+			justify-content: space-between;
+		}
+		
+	</style>
+</head>
+<body>
+	<span>Neos Yazılım</span>
+	<div>full stack developer</div>
+	<p>bu bir paragraftır</p>
+	<div>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor <b>xercitation ulincididunt ut laborelamco laboris nisi ut aliquip ex ea commo</b> et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud edo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<div class="neos1">
+		<p>paragraf</p>
+		<p>paragraf</p>
+		<p>paragraf</p>
+	</div>
+	
+
+</body>
+</html>

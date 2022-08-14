@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Class</title>
+	<style>
+		a.link:link{
+			color: yellow;
+
+		}
+		a.visited:visited{
+			color: red;
+		}
+		a.hover:hover{
+			color: magenta;
+		}
+		a.active:active{
+			color: green;
+		}
+
+		/*pseudo claslar a etiketine özeldir.*/
+		p::fist-line{
+			color: blue;
+			font-size: 20px;
+			background-color: orange;
+
+		}
+		p::first-letter{
+			color: darkred;
+			font-size: 40px;
+			background-color: inherit;
+		}
+		::marker{
+			color: red;
+			content: "*";
+		}
+		p i:first-child{
+			color: lightblue;
+			background-color: yellow;
+		}
+		p::before{
+			content: "Merhaba ";
+
+			/*befor da daima content ile kullanılır*/
+		}
+		p::after{
+			content: "cümle sonu";
+		}
+	</style>
+</head>
+<body>
+	<a href="https://nicepage.com
+" class="link">link</a>
+	<a href="https://nicepage.com
+" class="visited">visited</a>
+	<a href="https://nicepage.com
+" class="hover">Hover</a>
+	<a href="https://nicepage.com
+" class="active">Active</a>
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor <i>ncididunt ut labore et dolore magna aliqua.</i> Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco <i>laboris nisi ut aliquip</i> ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. <i>Excepteur sint occaecat cupidatat </i>non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+<ul>
+	<li>Altan Türel</li>
+	<li>Berdan Doğan</li>
+	<li>Reyyan İlgin</li>
+</ul>
+
+</body>
+</html>

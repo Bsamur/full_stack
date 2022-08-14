@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menuodevi</title>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+      html {
+        height: 100%;
+        background-image: linear-gradient(
+          to right top,
+          #8e44ad 0%,
+          #3498db 100%
+        );
+      }
+
+      nav {
+        max-width: 960px;
+        mask-image: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          #ffffff 25%,
+          #ffffff 75%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        margin: 0 auto;
+        padding: 60px 0;
+      }
+
+      nav ul {
+        text-align: center;
+        background: linear-gradient(
+          90deg,
+          rgba(183, 151, 151, 0) 0%,
+          rgba(255, 255, 255, 0.2) 25%,
+          rgba(184, 80, 80, 0.2) 75%,
+          rgba(255, 255, 255, 0) 100%
+        );
+        box-shadow: 0 0 25px rgba(76, 50, 50, 0.1),
+          inset 0 0 1px rgba(255, 255, 255, 0.6);
+      }
+
+      nav ul li {
+        display: inline-block;
+      }
+
+      nav ul li a {
+        padding: 18px;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        color: rgba(0, 35, 122, 0.5);
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+      }
+
+      nav ul li a:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1),
+          inset 0 0 1px rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(0, 35, 122, 0.7);
+      }
+      .conteiner {
+        margin: auto;
+        max-width: 960px;
+        height: 700px;
+        padding: 20px;
+        border: 2px solid gray;
+        overflow: auto;
+        margin-top: 20px;
+        background-color: rgb(202, 184, 184);
+      }
+      .left{
+        border: 1px solid gray;
+        width: 500px;
+        height: 500px;
+        float: left;
+        align-content: center;
+        text-align: justify;
+        padding: 10px;
+        margin: 20px;
+
+      }
+      .right{
+        border: 1px solid gray;
+        width: 180px;
+        height: 500px;
+        float: left;
+        align-content: center;
+        text-align: justify;
+        padding: 10px;
+        margin-top: 20px;
+        margin-left: 30px;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">ANASAYFA</a>
+        </li>
+        <li>
+          <a href="#">HAKKIMIZDA</a>
+        </li>
+        <li>
+          <a href="#">SERVİSLER</a>
+        </li>
+        <li>
+          <a href="#">İLETİŞİM</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="conteiner">
+      <div class="left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+          eligendi cum ea distinctio temporibus rem, debitis iure inventore
+          nobis ut provident excepturi culpa minima nostrum! Voluptatum maxime
+          sunt harum consequatur.
+        </p>
+        <img src="resim1.jpg" alt="resim" width="500" height="400" />
+      </div>
+      <div class="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nemo
+        consectetur eligendi quidem commodi aliquam in autem, similique
+        deleniti? Voluptatibus aut itaque hic eos necessitatibus ut nobis
+        commodi esse obcaecati.
+      </div>
+    </div>
+  </body>
+</html>
