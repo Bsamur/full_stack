@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bsamur_portfolyo</title>
+    <!-- Aos lib -->
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font Aws -->
+    <script src="https://kit.fontawesome.com/ac2a67798e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- sol sütun -->
+    <div class="maincontent-left">
+        
+        <img class="profile_picture" src="img/resmim.jpeg"  alt="altlik" data-os="zoom-in" width="50%" height="25%" >
+        
+        
+        <div class="left-1">
+        	<h1>BAHADIR A. SAMUR</h1>
+            <p><i class="fa fa-quote-left"></i> Full Stack web developer <i class="fa fa-quote-right"></i></p>
+            <p>AND</p>
+            <p><i class="fa fa-quote-left"></i> Mechatronic System Engineer <i class="fa fa-quote-right"></i></p>
+        </div>
+
+        <div class="left-2">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="https://github.com/Bsamur" title=""><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    
+<!-- sağ sütun -->
+    <div class="maincontent-right">
+
+        <div class="ust_menu">
+            <a href="about.html" title="hakkimda"><i class="fa fa-user"></i> ABOUT ME</a>
+            <a href="resume.html" title=""><i class="fa fa-file-text"></i> RESUME</a>
+            <a href="project.html" title=""><i class="fa fa-sliders"></i> PROJECTS</a>
+            <a href="resume.html" title=""><i class="fa fa-code-fork"></i> PORTFOLİO</a>
+            <a href="cost_calculation.html" title=""><i class="fa fa-paper-plane"></i> COST AND CONTACTS</a>
+        </div>
+
+        <div class="resimler">
+            <img class="mySlides" src="img/mobile-applications-1.jpg" alt="mobile">
+            <img class="mySlides" src="img/web-applications-1.jpg" alt="mobile">
+            <img class="mySlides" src="img/mobile-applications-2.jpg" alt="mobile">
+            <img class="mySlides" src="img/web-applications-2.jpg" alt="mobile">
+            <img class="mySlides" src="img/web-applications-3.jpg" alt="mobile">
+            <img class="mySlides" src="img/web-applications-4.jpg" alt="mobile">
+
+
+        </div>
+    
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        slayt();
+
+        function slayt() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1}
+            x[slideIndex-1].style.display = "block";
+            setTimeout(slayt, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>  
+
+</html>
+    

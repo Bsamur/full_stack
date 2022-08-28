@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #daire{
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            border-radius: 50%;
+            margin: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="buton">Click</button>
+    <button id="gerigel">geri getir</button>
+    <button id="kare">Kare</button>
+
+    <div id="daire"></div>
+
+    <script>
+        document.getElementById("buton").onclick=function(){
+            document.getElementById("daire").style.display="none";
+
+        }
+
+        document.getElementById("gerigel").onclick=function(){
+            document.getElementById("daire").style.display="block";
+           // document.getElementById("daire").style.borderRadius="0";
+
+        }
+        document.getElementById("kare").onclick=function(){
+            document.getElementById("daire").style.borderRadius="0";
+        }
+    </script>
+</body>
+</html>

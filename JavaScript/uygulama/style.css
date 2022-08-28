@@ -1,0 +1,19 @@
+#resim{
+    width: 500px;
+    float: left;
+    margin-left:150px ;
+
+}
+button{
+    padding: 10px;
+    margin-inline: 20px;
+    
+    position: relative;
+    top: -100px;
+    left: 460px;
+}
+button:hover{
+    color: aqua;
+    background-color: brown;
+    font-size: larger;
+}

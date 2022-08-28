@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+
+            width: 40%;
+            margin: auto;
+            background-color: bisque;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Üye Giriş</legend>
+        <input type="text" id="isim" placeholder="kullanıcı adını giriniz: "><br><br>
+        <input type="password" id="sifre" placeholder="parola"><br><br>
+        <button id="buton">Giriş</button>
+    </fieldset>
+
+    <script>
+        let buton=document.getElementById("buton");
+
+        buton.onclick= function(){
+            let isim=document.getElementById("isim").value;
+            let sifre=document.getElementById("sifre").value;
+            let kullaniciAdi="neos123";
+            let kullaniciSifre="1234";
+                
+                if(isim==kullaniciAdi && sifre==kullaniciSifre){
+                    alert("giriş başarılı");
+                }
+                else{
+                    alert("kullanıcı adi ve şifre hatalı");
+                }
+    }
+    </script>
+</body>
+</html>

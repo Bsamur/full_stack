@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="yas" placeholder="Yaşınızı giriniz">
+    <p id="sonuc"></p>
+    <button id="buton">Kontrol</button>
+    <script>
+        //let yas=Number(prompt("yaşınızı girinizi: "));
+
+        //if (yas>=20){
+        //    alert("hoşgeldiniz");
+        //}
+        //else{
+        //    alert("yaşınız site için uygun değildir")
+        //
+        let buton=document.getElementById("buton");
+        let sonuc=document.getElementById("sonuc");
+
+        buton.onclick=function(){
+            let yas=document.getElementById("yas").value;
+
+            if(yas<=18){
+                sonuc.innerHTML="yaşınız uygun değildir"
+
+            }
+            else{
+            sonuc.innerHTML="giriş başarılı hoşgeldiniz."
+        
+            }   
+
+        } 
+    </script>
+</body>
+</html>
